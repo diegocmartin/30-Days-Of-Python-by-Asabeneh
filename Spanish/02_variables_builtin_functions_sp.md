@@ -136,16 +136,16 @@ Imprimamos y calculemos la longitud de las variables declaradas arriba：
 ```py
 # Imprimir valores de las variables
 
-print('First name:', nombre)
-print('First name length:', len(nombre))
-print('Last name: ', apellido)
-print('Last name length: ', len(apellido))
-print('pais: ', pais)
-print('City: ', ciudad)
-print('edad: ', edad)
-print('Married: ', casado)
-print('Skills: ', superpoderes)
-print('Person information: ', person_info)
+print('Nombre:', nombre)
+print('Longitud del nombre:', len(nombre))
+print('Apellido: ', apellido)
+print('Longitud del apellido: ', len(apellido))
+print('País: ', pais)
+print('Ciudad: ', ciudad)
+print('Edad: ', edad)
+print('Casado: ', casado)
+print('Superpoderes: ', superpoderes)
+print('Información de la persona: ', person_info)
 ```
 
 ### Declarar varias variables en una línea
@@ -158,11 +158,11 @@ También se pueden declarar múltiples variables en la misma línea：
 nombre, apellido, pais, edad, casado = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
 
 print(nombre, apellido, pais, edad, casado)
-print('First name:', nombre)
-print('Last name: ', apellido)
-print('pais: ', pais)
-print('edad: ', edad)
-print('Married: ', casado)
+print('Nombre:', nombre)
+print('Apellido: ', apellido)
+print('País: ', pais)
+print('Adad: ', edad)
+print('Casado: ', casado)
 ```
 
 Use la función integrada _input()_ para obtener entrada del usuario. Asignemos los datos ingresados por el usuario a las variables nombre y edad.
@@ -170,8 +170,8 @@ Use la función integrada _input()_ para obtener entrada del usuario. Asignemos 
 **Ejemplo:**
 
 ```py
-nombre = input('What is your name: ') 
-edad = input('How old are you? ')
+nombre = input('¿Cuál es tu nombre?: ') 
+edad = input('¿Que edad tienes? ')
 
 print(nombre)
 print(edad)
