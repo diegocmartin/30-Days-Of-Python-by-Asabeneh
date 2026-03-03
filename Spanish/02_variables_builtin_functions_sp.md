@@ -16,7 +16,7 @@
 
 [<< Día 1](./readme_sp.md) | [Día 3 >>](./03_operators_sp.md)
 
-![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
+![30DaysOfPython](../imedads/30DaysOfPython_banner3@2x.png)
 
 _Lectura aproximada: 12 min_
 
@@ -37,21 +37,21 @@ _Lectura aproximada: 12 min_
 
 Python proporciona muchas funciones integradas. Las funciones integradas están disponibles a nivel global, lo que significa que puede usarlas sin importar o configurar nada. A continuación se muestran algunas de las funciones integradas más comunes de Python: _print()_, _len()_, _type()_, _int()_, _float()_, _str()_, _input()_, _list()_, _dict()_, _min()_, _max()_, _sum()_, _sorted()_, _open()_, _file()_, _help()_, _dir()_. En la tabla siguiente verá la lista completa de funciones integradas obtenida de la [documentación de Python](https://docs.python.org/3.9/library/functions.html).
 
-![Built-in Functions](../images/builtin-functions.png)
+![Built-in Functions](../imedads/builtin-functions.png)
 
 Abramos el intérprete interactivo de Python y comencemos a usar algunas de las funciones integradas más comunes.
 
-![Built-in functions](../images/builtin-functions_practice.png)
+![Built-in functions](../imedads/builtin-functions_practice.png)
 
 Practique más usando diferentes funciones integradas
 
-![Help and Dir Built in Functions](../images/help_and_dir_builtin.png)
+![Help and Dir Built in Functions](../imedads/help_and_dir_builtin.png)
 
 Como se muestra arriba, Python tiene palabras reservadas. No podemos usar palabras reservadas para declarar variables o funciones. Presentaremos las variables en la sección siguiente.
 
 Confío en que ahora esté familiarizado con las funciones integradas. Practiquemos más con ellas antes de continuar a la siguiente sección.
 
-![Min Max Sum](../images/builtin-functional-final.png)
+![Min Max Sum](../imedads/builtin-functional-final.png)
 
 ## Variables
 
@@ -71,11 +71,11 @@ A continuación algunos ejemplos de nombres válidos:
 ```shell
 firstname
 lastname
-age
-country
+edad
+pais
 city
-first_name
-last_name
+nombre
+apellido
 capital_city
 	_if # si queremos usar una palabra reservada como variable
 year_2021
@@ -95,26 +95,26 @@ first$name
 num-1
 1num
 ```
-Usaremos la convención de nombres estándar adoptada por muchos desarrolladores de Python. Los desarrolladores de Python usan la convención snake_case. Para variables que contienen varias palabras usamos guiones bajos entre las palabras (por ejemplo first_name, last_name, engine_rotation_speed). El siguiente ejemplo muestra la convención estándar: cuando el nombre de la variable contiene más de una palabra, se deben usar guiones bajos.
+Usaremos la convención de nombres estándar adoptada por muchos desarrolladores de Python. Los desarrolladores de Python usan la convención snake_case. Para variables que contienen varias palabras usamos guiones bajos entre las palabras (por ejemplo nombre, apellido, engine_rotation_speed). El siguiente ejemplo muestra la convención estándar: cuando el nombre de la variable contiene más de una palabra, se deben usar guiones bajos.
 
-Cuando asignamos un valor a una variable, esto se llama declarar una variable. Por ejemplo, en el siguiente ejemplo mi nombre se asigna a la variable first_name. El signo igual es el operador de asignación. Asignar significa almacenar un dato en una variable. El signo igual en Python no es el mismo que en matemáticas.
+Cuando asignamos un valor a una variable, esto se llama declarar una variable. Por ejemplo, en el siguiente ejemplo mi nombre se asigna a la variable nombre. El signo igual es el operador de asignación. Asignar significa almacenar un dato en una variable. El signo igual en Python no es el mismo que en matemáticas.
 
 _Ejemplo:_
 
 ```py
 # Variables en Python
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
-city = 'Helsinki'
-age = 250
-is_married = True
-skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
+nombre = 'Asabeneh'
+apellido = 'Yetayeh'
+pais = 'Finland'
+ciudad = 'Helsinki'
+edad = 250
+casado = True
+superpoderes = ['HTML', 'CSS', 'JS', 'React', 'Python']
 person_info = {
-   'firstname':'Asabeneh',
-   'lastname':'Yetayeh',
-   'country':'Finland',
-   'city':'Helsinki'
+   'nombre':'Asabeneh',
+   'apellido':'Yetayeh',
+   'pais':'Finland',
+   'ciudad':'Helsinki'
    }
 ```
 
@@ -123,9 +123,9 @@ Usemos las funciones integradas _print()_ y _len()_. La función print puede ace
 **Ejemplo:**
 
 ```py
-print('Hello, World!') # The text Hello, World! is an argument
-print('Hello',',', 'World','!') # it can take multiple arguments, four arguments have been passed
-print(len('Hello, World!')) # it takes only one argument
+print('Hola, mundo!') # el texto es un argumento
+print('Hola',',', 'mundo','!') # pueden usarse varios argumentos, se han pasado 4 en este caso
+print(len('¡Hola, mundo!')) # Sólo un argumento
 ```
 
 Imprimamos y calculemos la longitud de las variables declaradas arriba：
@@ -136,15 +136,15 @@ Imprimamos y calculemos la longitud de las variables declaradas arriba：
 ```py
 # Imprimir valores de las variables
 
-print('First name:', first_name)
-print('First name length:', len(first_name))
-print('Last name: ', last_name)
-print('Last name length: ', len(last_name))
-print('Country: ', country)
-print('City: ', city)
-print('Age: ', age)
-print('Married: ', is_married)
-print('Skills: ', skills)
+print('First name:', nombre)
+print('First name length:', len(nombre))
+print('Last name: ', apellido)
+print('Last name length: ', len(apellido))
+print('pais: ', pais)
+print('City: ', ciudad)
+print('edad: ', edad)
+print('Married: ', casado)
+print('Skills: ', superpoderes)
 print('Person information: ', person_info)
 ```
 
@@ -155,26 +155,26 @@ También se pueden declarar múltiples variables en la misma línea：
 **Ejemplo:**
 
 ```py
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+nombre, apellido, pais, edad, casado = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
 
-print(first_name, last_name, country, age, is_married)
-print('First name:', first_name)
-print('Last name: ', last_name)
-print('Country: ', country)
-print('Age: ', age)
-print('Married: ', is_married)
+print(nombre, apellido, pais, edad, casado)
+print('First name:', nombre)
+print('Last name: ', apellido)
+print('pais: ', pais)
+print('edad: ', edad)
+print('Married: ', casado)
 ```
 
-Use la función integrada _input()_ para obtener entrada del usuario. Asignemos los datos ingresados por el usuario a las variables first_name y age.
+Use la función integrada _input()_ para obtener entrada del usuario. Asignemos los datos ingresados por el usuario a las variables nombre y edad.
 .
 **Ejemplo:**
 
 ```py
-first_name = input('What is your name: ') 
-age = input('How old are you? ')
+nombre = input('What is your name: ') 
+edad = input('How old are you? ')
 
-print(first_name)
-print(age)
+print(nombre)
+print(edad)
 ```
 
 ## Tipos de datos
@@ -191,21 +191,21 @@ Hay varios tipos de datos en Python. Para identificar el tipo de un dato usamos 
 # Diferentes tipos de datos en Python
 # Declaramos algunas variables con distintos tipos de datos
 
-first_name = 'Asabeneh'     # str
-last_name = 'Yetayeh'       # str
-country = 'Finland'         # str
+nombre = 'Asabeneh'     # str
+apellido = 'Yetayeh'       # str
+pais = 'Finland'         # str
 city= 'Helsinki'            # str
-age = 250                   # int, no se preocupe, esta no es mi edad real :) 
+edad = 250                   # int, no se preocupe, esta no es mi edad real :) 
 
 # Printing out types
 print(type('Asabeneh'))     # str
-print(type(first_name))     # str
+print(type(nombre))     # str
 print(type(10))             # int
 print(type(3.14))           # float
 print(type(1 + 1j))         # complex
 print(type(True))           # bool
 print(type([1, 2, 3, 4]))     # list
-print(type({'name':'Asabeneh','age':250, 'is_married':250}))    # dict
+print(type({'name':'Asabeneh','edad':250, 'casado':250}))    # dict
 print(type((1,2)))                                              # tuple
 print(type(zip([1,2],[3,4])))                                   # set
 ```
@@ -239,10 +239,10 @@ print('num_int', int(num_str))      # 10
 print('num_float', float(num_str))  # 10.6
 
 # De cadena a lista
-first_name = 'Asabeneh'
-print(first_name)               # 'Asabeneh'
-first_name_to_list = list(first_name)
-print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
+nombre = 'Asabeneh'
+print(nombre)               # 'Asabeneh'
+nombre_to_list = list(nombre)
+print(nombre_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 ```
 
 ## Números
@@ -268,14 +268,14 @@ Diferentes tipos numéricos en Python
 
 1. Crea una carpeta `day_2` dentro de la carpeta `30DaysOfPython`. Dentro de esa carpeta crea un archivo `variables.py`
 2. Añade un comentario: 'Día 2: 30 Days of Python programming'
-3. Declara una variable `first_name` y asígnale un valor
-4. Declara una variable `last_name` y asígnale un valor
+3. Declara una variable `nombre` y asígnale un valor
+4. Declara una variable `apellido` y asígnale un valor
 5. Declara una variable `full_name` y asígnale un valor
-6. Declara una variable `country` y asígnale un valor
+6. Declara una variable `pais` y asígnale un valor
 7. Declara una variable `city` y asígnale un valor
-8. Declara una variable `age` y asígnale un valor
+8. Declara una variable `edad` y asígnale un valor
 9. Declara una variable `year` y asígnale un valor
-10. Declara una variable `is_married` y asígnale un valor
+10. Declara una variable `casado` y asígnale un valor
 11. Declara una variable `is_true` y asígnale un valor
 12. Declara una variable `is_light_on` y asígnale un valor
 13. Declara múltiples variables en una sola línea
@@ -283,8 +283,8 @@ Diferentes tipos numéricos en Python
 ### Ejercicio: Nivel 2
 
 1. Usa la función integrada _type()_ para comprobar el tipo de las variables que declaraste
-1. Usa la función _len()_ para calcular la longitud de la variable `first_name`
-1. Compara la longitud de las variables `first_name` y `last_name`
+1. Usa la función _len()_ para calcular la longitud de la variable `nombre`
+1. Compara la longitud de las variables `nombre` y `apellido`
 1. Declara las variables `num_one = 5` y `num_two = 4`
     1. Suma `num_one` y `num_two` y asigna el resultado a la variable `total`
     2. Resta `num_two` de `num_one` y asigna el resultado a la variable `diff`
