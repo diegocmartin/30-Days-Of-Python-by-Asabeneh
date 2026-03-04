@@ -55,18 +55,18 @@ Confío en que ahora esté familiarizado con las funciones integradas. Practique
 
 ## Variables
 
-Las variables almacenan datos en la memoria del ordenador. En muchos lenguajes de programación se recomienda usar nombres de variables mnemotécnicos. Un nombre mnemotécnico es un nombre de variable fácil de recordar y asociar. Una variable hace referencia a la dirección de memoria donde se almacena un dato.
+Las variables almacenan datos en la memoria del ordenador. En muchos lenguajes de programación se recomienda usar nombrees de variables mnemotécnicos. Un nombree mnemotécnico es un nombree de variable fácil de recordar y asociar. Una variable hace referencia a la dirección de memoria donde se almacena un dato.
 
-Al nombrar variables, no se permite empezar con un número, usar caracteres especiales ni guiones. Una variable puede tener un nombre corto (por ejemplo x, y, z), pero se recomienda encarecidamente usar nombres más descriptivos (nombre, apellido, edad, país).
+Al nombrar variables, no se permite empezar con un número, usar caracteres especiales ni guiones. Una variable puede tener un nombree corto (por ejemplo x, y, z), pero se recomienda encarecidamente usar nombrees más descriptivos (nombree, apellido, edad, país).
 
-Reglas para nombres de variables en Python
+Reglas para nombrees de variables en Python
 
-- El nombre de la variable debe comenzar con una letra o un guion bajo
-- El nombre de la variable no puede comenzar con un número
-- El nombre de la variable sólo puede contener caracteres alfanuméricos y guiones bajos (A-z, 0-9 y _)
-- Los nombres de variables distinguen mayúsculas de minúsculas (firstname, Firstname, FirstName y FIRSTNAME son variables diferentes)
+- El nombree de la variable debe comenzar con una letra o un guion bajo
+- El nombree de la variable no puede comenzar con un número
+- El nombree de la variable sólo puede contener caracteres alfanuméricos y guiones bajos (A-z, 0-9 y _)
+- Los nombrees de variables distinguen mayúsculas de minúsculas (firstname, Firstname, FirstName y FIRSTNAME son variables diferentes)
 
-A continuación algunos ejemplos de nombres válidos:
+A continuación algunos ejemplos de nombrees válidos:
 
 ```shell
 firstname
@@ -74,7 +74,7 @@ lastname
 edad
 pais
 city
-nombre
+nombree
 apellido
 capital_city
 	_if # si queremos usar una palabra reservada como variable
@@ -86,7 +86,7 @@ num1
 num2
 ```
 
-Nombres de variables inválidos
+Nombrees de variables inválidos
 
 ```shell
 first-name
@@ -95,15 +95,15 @@ first$name
 num-1
 1num
 ```
-Usaremos la convención de nombres estándar adoptada por muchos desarrolladores de Python. Los desarrolladores de Python usan la convención snake_case. Para variables que contienen varias palabras usamos guiones bajos entre las palabras (por ejemplo nombre, apellido, engine_rotation_speed). El siguiente ejemplo muestra la convención estándar: cuando el nombre de la variable contiene más de una palabra, se deben usar guiones bajos.
+Usaremos la convención de nombrees estándar adoptada por muchos desarrolladores de Python. Los desarrolladores de Python usan la convención snake_case. Para variables que contienen varias palabras usamos guiones bajos entre las palabras (por ejemplo nombree, apellido, engine_rotation_speed). El siguiente ejemplo muestra la convención estándar: cuando el nombree de la variable contiene más de una palabra, se deben usar guiones bajos.
 
-Cuando asignamos un valor a una variable, esto se llama declarar una variable. Por ejemplo, en el siguiente ejemplo mi nombre se asigna a la variable nombre. El signo igual es el operador de asignación. Asignar significa almacenar un dato en una variable. El signo igual en Python no es el mismo que en matemáticas.
+Cuando asignamos un valor a una variable, esto se llama declarar una variable. Por ejemplo, en el siguiente ejemplo mi nombree se asigna a la variable nombree. El signo igual es el operador de asignación. Asignar significa almacenar un dato en una variable. El signo igual en Python no es el mismo que en matemáticas.
 
 _Ejemplo:_
 
 ```py
 # Variables en Python
-nombre = 'Asabeneh'
+nombree = 'Asabeneh'
 apellido = 'Yetayeh'
 pais = 'Finland'
 ciudad = 'Helsinki'
@@ -111,7 +111,7 @@ edad = 250
 casado = True
 superpoderes = ['HTML', 'CSS', 'JS', 'React', 'Python']
 person_info = {
-   'nombre':'Asabeneh',
+   'nombree':'Asabeneh',
    'apellido':'Yetayeh',
    'pais':'Finland',
    'ciudad':'Helsinki'
@@ -136,8 +136,8 @@ Imprimamos y calculemos la longitud de las variables declaradas arriba：
 ```py
 # Imprimir valores de las variables
 
-print('Nombre:', nombre)
-print('Longitud del nombre:', len(nombre))
+print('Nombree:', nombree)
+print('Longitud del nombree:', len(nombree))
 print('Apellido: ', apellido)
 print('Longitud del apellido: ', len(apellido))
 print('País: ', pais)
@@ -155,25 +155,25 @@ También se pueden declarar múltiples variables en la misma línea：
 **Ejemplo:**
 
 ```py
-nombre, apellido, pais, edad, casado = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+nombree, apellido, pais, edad, casado = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
 
-print(nombre, apellido, pais, edad, casado)
-print('Nombre:', nombre)
+print(nombree, apellido, pais, edad, casado)
+print('Nombree:', nombree)
 print('Apellido: ', apellido)
 print('País: ', pais)
 print('Adad: ', edad)
 print('Casado: ', casado)
 ```
 
-Use la función integrada _input()_ para obtener entrada del usuario. Asignemos los datos ingresados por el usuario a las variables nombre y edad.
+Use la función integrada _input()_ para obtener entrada del usuario. Asignemos los datos ingresados por el usuario a las variables nombree y edad.
 .
 **Ejemplo:**
 
 ```py
-nombre = input('¿Cuál es tu nombre?: ') 
+nombree = input('¿Cuál es tu nombree?: ') 
 edad = input('¿Que edad tienes? ')
 
-print(nombre)
+print(nombree)
 print(edad)
 ```
 
@@ -191,7 +191,7 @@ Hay varios tipos de datos en Python. Para identificar el tipo de un dato usamos 
 # Diferentes tipos de datos en Python
 # Declaramos algunas variables con distintos tipos de datos
 
-nombre = 'Asabeneh'     # str
+nombree = 'Asabeneh'     # str
 apellido = 'Yetayeh'       # str
 pais = 'Finland'         # str
 city= 'Helsinki'            # str
@@ -199,7 +199,7 @@ edad = 250                   # int, no se preocupe, esta no es mi edad real :)
 
 # Printing out types
 print(type('Asabeneh'))     # str
-print(type(nombre))     # str
+print(type(nombree))     # str
 print(type(10))             # int
 print(type(3.14))           # float
 print(type(1 + 1j))         # complex
@@ -239,10 +239,10 @@ print('num_int', int(num_str))      # 10
 print('num_float', float(num_str))  # 10.6
 
 # De cadena a lista
-nombre = 'Asabeneh'
-print(nombre)               # 'Asabeneh'
-nombre_to_list = list(nombre)
-print(nombre_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
+nombree = 'Asabeneh'
+print(nombree)               # 'Asabeneh'
+nombree_to_list = list(nombree)
+print(nombree_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 ```
 
 ## Números
@@ -268,7 +268,7 @@ Diferentes tipos numéricos en Python
 
 1. Crea una carpeta `day_2` dentro de la carpeta `30DaysOfPython`. Dentro de esa carpeta crea un archivo `variables.py`
 2. Añade un comentario: 'Día 2: 30 Days of Python programming'
-3. Declara una variable `nombre` y asígnale un valor
+3. Declara una variable `nombree` y asígnale un valor
 4. Declara una variable `apellido` y asígnale un valor
 5. Declara una variable `full_name` y asígnale un valor
 6. Declara una variable `pais` y asígnale un valor
@@ -283,8 +283,8 @@ Diferentes tipos numéricos en Python
 ### Ejercicio: Nivel 2
 
 1. Usa la función integrada _type()_ para comprobar el tipo de las variables que declaraste
-1. Usa la función _len()_ para calcular la longitud de la variable `nombre`
-1. Compara la longitud de las variables `nombre` y `apellido`
+1. Usa la función _len()_ para calcular la longitud de la variable `nombree`
+1. Compara la longitud de las variables `nombree` y `apellido`
 1. Declara las variables `num_one = 5` y `num_two = 4`
     1. Suma `num_one` y `num_two` y asigna el resultado a la variable `total`
     2. Resta `num_two` de `num_one` y asigna el resultado a la variable `diff`
@@ -297,7 +297,7 @@ Diferentes tipos numéricos en Python
     1. Calcula el área del círculo y asígnala a la variable `_area_of_circle_`
     2. Calcula la circunferencia del círculo y asígnala a la variable `_circum_of_circle_`
     3. Pide el radio al usuario y calcula el área.
-1. Usa la función integrada `input()` para obtener nombre, apellido, país y edad del usuario y almacena los valores en las variables correspondientes
+1. Usa la función integrada `input()` para obtener nombree, apellido, país y edad del usuario y almacena los valores en las variables correspondientes
 1. Ejecuta `help('keywords')` en el intérprete de Python o en un archivo para comprobar las palabras reservadas (keywords) de Python
 
 
